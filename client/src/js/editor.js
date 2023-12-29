@@ -24,9 +24,14 @@ export default class {
 
     // When the editor is ready, set the value to whatever is stored in indexeddb.
     // Fall back to localStorage if nothing is stored in indexeddb, and if neither is available, set the value to header.
+    // if(localData) console.log('ill be damned', localData);
     getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
-      this.editor.setValue(data || localData || header);
+      // console.log('ill be damnedddd', data, localData, header);
+      const lastData = data?.length === 0 ? false : data[data.length - 1].content;
+      this.editor.setValue( lastData || localData || header);
+      // this.editor.setValue( data || localData || header);
+      // this.editor.setValue('this is a test');
     });
 
     this.editor.on('change', () => {
