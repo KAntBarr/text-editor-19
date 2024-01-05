@@ -4,7 +4,7 @@
 ## Description
 This web application allows the user to create and save a document while even being offline. Not only can this app be ran in the browser, it can be downloaded as a progressive web app. The document is saved as soon as the user clicks off of the window.
 
-![image](https://github.com/KAntBarr/text-editor-19/assets/70618192/de64bb18-0af2-4891-b1f8-c224eef0279d)
+![image](https://github.com/KAntBarr/text-editor-19/assets/70618192/d21084dc-f619-4e39-bfc0-33c54e75fa1e)
 
 ## Table of Contents
 - [Installation](#installation)
